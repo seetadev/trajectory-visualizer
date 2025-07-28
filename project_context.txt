@@ -1,0 +1,135 @@
+Project structure:
+.
+├── README.md
+├── codebase_files.txt
+├── craco.config.js
+├── demo1.json
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── pre-commit-check.sh
+├── project_context.txt
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo.png
+│   └── manifest.json
+├── sample-trajectory.json
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   └── github-logo.svg
+│   ├── components
+│   │   ├── RepositorySelector.tsx
+│   │   ├── RunDetails.tsx
+│   │   ├── WorkflowRunsList.tsx
+│   │   ├── artifacts
+│   │   ├── diff-viewer.tsx
+│   │   ├── header
+│   │   ├── json-visualizer
+│   │   ├── jsonl-viewer
+│   │   ├── loading
+│   │   ├── markdown.tsx
+│   │   ├── share
+│   │   ├── status
+│   │   ├── syntax-highlighter.tsx
+│   │   ├── timeline
+│   │   ├── upload
+│   │   └── workflow-runs
+│   ├── config
+│   │   └── jsonl-viewer-config.ts
+│   ├── index.css
+│   ├── index.tsx
+│   ├── reportWebVitals.ts
+│   ├── services
+│   │   └── api.ts
+│   ├── setupTests.ts
+│   ├── test
+│   │   ├── DarkModeToggle.test.tsx
+│   │   └── setup.ts
+│   ├── tests
+│   │   ├── Demo1Json.test.tsx
+│   │   ├── Demo1JsonConverter.test.tsx
+│   │   ├── Demo1JsonDisplay.test.tsx
+│   │   ├── FullContentDisplay.test.tsx
+│   │   ├── ObservationDisplay.test.tsx
+│   │   ├── SimpleScreenshot.test.tsx
+│   │   └── TrajectoryDisplay.test.tsx
+│   ├── types
+│   │   ├── index.ts
+│   │   ├── share.ts
+│   │   ├── trajectory.ts
+│   │   └── upload.ts
+│   ├── types.ts
+│   └── utils
+│       ├── __mocks__
+│       ├── __tests__
+│       ├── jsonl-parser.ts
+│       ├── object-utils.ts
+│       ├── openhands-converter.ts
+│       └── share.ts
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── vitest.config.ts
+
+23 directories, 51 files
+Package.json content:
+{
+  "name": "trajectory-visualizer",
+  "version": "0.0.1",
+  "author": {
+    "name": "Pontus Espe",
+    "email": "pontus.espe@devpteam.com"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "browser-process-hrtime": "^1.0.0",
+    "clsx": "^2.1.1",
+    "diff": "^7.0.0",
+    "jszip": "^3.10.1",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-diff-viewer-continued": "^3.4.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.3.8",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^9.1.0",
+    "react-router-dom": "^6.22.3",
+    "react-syntax-highlighter": "^15.6.1",
+    "remark-gfm": "^4.0.1",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "pre-commit": "./pre-commit-check.sh"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/testing-library__react": "^10.0.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "jsdom": "^26.0.0",
+    "postcss": "^8.4.35",
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^3.0.8"
+  }
+}
